@@ -1,0 +1,115 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664300472137' stop='1664300487857'>
+    <name>Volvo application</name>
+    <title>Volvo application</title>
+    <test-cases>
+        <test-case start='1664300472138' status='passed' stop='1664300478839'>
+            <name>To verify the volvo quotes is displayed or not</name>
+            <title>To verify the volvo quotes is displayed or not</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1664300478840' status='passed' stop='1664300478940'>
+            <name>To verify the volvo logo is displayed or not</name>
+            <title>To verify the volvo logo is displayed or not</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1664300478940' status='passed' stop='1664300480585'>
+            <name>To check logo has link</name>
+            <title>To check logo has link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1664300480586' status='passed' stop='1664300482011'>
+            <name>To get submenu</name>
+            <title>To get submenu</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1664300482013' status='passed' stop='1664300484345'>
+            <name>should fetch menu links and visit each page</name>
+            <title>should fetch menu links and visit each page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1664300484382' status='passed' stop='1664300486051'>
+            <name>To verify the volvo quotes is displayed or not</name>
+            <title>To verify the volvo quotes is displayed or not</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1664300486052' status='broken' stop='1664300487855'>
+            <name>should detect if menu is clickable</name>
+            <title>should detect if menu is clickable</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>_login.default.waitUntil is not a function</message>
+                <stack-trace>TypeError: _login.default.waitUntil is not a function
+                    at Context.&lt;anonymous> (D:\volvo\test\specs\/volvoTest.js:61:29)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

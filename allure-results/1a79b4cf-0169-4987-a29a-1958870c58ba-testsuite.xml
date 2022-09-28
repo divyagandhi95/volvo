@@ -1,0 +1,150 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664280626720' stop='1664280633683'>
+    <name>Volvo application</name>
+    <title>Volvo application</title>
+    <test-cases>
+        <test-case start='1664280626722' status='passed' stop='1664280630769'>
+            <name>To verify the volvo quotes is displayed or not</name>
+            <title>To verify the volvo quotes is displayed or not</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664280626729' status='passed' stop='1664280630634'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='5d90df6a-5e9d-4bad-bf9e-854d8f312691-attachment.json' type='application/json' size='73'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664280630644' status='passed' stop='1664280630702'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='3a9c3535-d125-4745-af74-b637ee38fffb-attachment.json' type='application/json' size='46'/>
+                        <attachment title='Response' source='4ec1c406-de88-40d8-a0d4-4ca7b06ade18-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664280630715' status='passed' stop='1664280630759'>
+                    <name>GET /session/:sessionId/element/38ce9478-f016-495d-8039-d505c833cd2d/text</name>
+                    <title>GET /session/:sessionId/element/38ce9478-f016-495d-8039-d505c833cd2d/text</title>
+                    <attachments>
+                        <attachment title='Response' source='b03fb715-b920-4210-b03b-08b8d4bfb667-attachment.json' type='application/json' size='63'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1664280630770' status='passed' stop='1664280630858'>
+            <name>To verify the volvo logo is displayed or not</name>
+            <title>To verify the volvo logo is displayed or not</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664280630771' status='passed' stop='1664280630810'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='d8a159a0-5a7d-4862-95fe-d92fa87009ae-attachment.json' type='application/json' size='75'/>
+                        <attachment title='Response' source='02867b88-4f2b-43f7-8e36-81d34c69b5f3-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664280630821' status='passed' stop='1664280630857'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='a45c40b0-e04c-4a76-b774-8891b271170c-attachment.json' type='application/json' size='8331'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1664280630859' status='broken' stop='1664280633605'>
+            <name>To check logo has link</name>
+            <title>To check logo has link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664280630861' status='passed' stop='1664280633102'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='37a771fa-5b14-4c7f-95cc-e1e67354ea8f-attachment.json' type='application/json' size='73'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664280633105' status='broken' stop='1664280633605'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1664280633108' status='passed' stop='1664280633603'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='2bd08ef8-7e03-4b13-a6b2-cd11ce3cd0d1-attachment.json' type='application/json' size='75'/>
+                                <attachment title='Screenshot' source='da551bec-59f0-4a8c-9cf5-18e83c446eb6-attachment.png' type='image/png' size='68178'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>link is not defined</message>
+                <stack-trace>ReferenceError: link is not defined
+                    at Context.&lt;anonymous> (D:\volvo\test\specs\/volvoTest.js:24:16)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1664280633605' status='passed' stop='1664280633680'>
+            <name>should fetch menu links and visit each page</name>
+            <title>should fetch menu links and visit each page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664280633608' status='passed' stop='1664280633627'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='be9f4b33-ea29-4386-8158-7533ce9fb353-attachment.json' type='application/json' size='70'/>
+                        <attachment title='Response' source='85f4895e-6b80-4cbf-b044-2fa054b24786-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='7a537eaf-730f-4b19-a7d1-7d2875040d0b-attachment.json' type='application/json' size='93'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

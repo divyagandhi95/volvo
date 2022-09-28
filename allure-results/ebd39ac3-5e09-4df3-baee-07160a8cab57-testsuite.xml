@@ -1,0 +1,77 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664261686810' stop='1664261691176'>
+    <name>Volvo application</name>
+    <title>Volvo application</title>
+    <test-cases>
+        <test-case start='1664261686811' status='broken' stop='1664261690893'>
+            <name>To verify the volvo quotes is displayed or not</name>
+            <title>To verify the volvo quotes is displayed or not</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664261686816' status='passed' stop='1664261690693'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='c9ddbe7d-b397-473f-84a0-6ebec7258aa9-attachment.json' type='application/json' size='73'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664261690713' status='passed' stop='1664261690891'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='2a5075ab-40e9-4057-adda-991e6b030146-attachment.png' type='image/png' size='80020'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'isDevTools')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'isDevTools')
+                    at findElement (D:\volvo\node_modules\webdriverio\build\utils\index.js:216:15)
+                    at $ (D:\volvo\node_modules\webdriverio\build\commands\browser\$.js:91:43)
+                    at LoginPage.volvoQuotes (D:\volvo\test\pageobjects\/login.page.js:14:16)
+                    at Context.&lt;anonymous> (D:\volvo\test\specs\/volvoTest.js:7:32)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1664261690894' status='broken' stop='1664261691173'>
+            <name>main menu existsor not</name>
+            <title>main menu existsor not</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664261690898' status='passed' stop='1664261691173'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='ab94f805-a900-4f4d-ac65-302e9673d991-attachment.png' type='image/png' size='80230'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>_login.default.MenuText.isDisplayed is not a function</message>
+                <stack-trace>TypeError: _login.default.MenuText.isDisplayed is not a function
+                    at Context.&lt;anonymous> (D:\volvo\test\specs\/volvoTest.js:12:36)
+                    at Context.executeAsync (D:\volvo\node_modules\@wdio\utils\build\shim.js:333:27)
+                    at Context.testFrameworkFnWrapper (D:\volvo\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:51:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

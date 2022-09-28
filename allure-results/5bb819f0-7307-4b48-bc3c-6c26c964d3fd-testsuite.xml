@@ -1,0 +1,84 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664260555822' stop='1664260561931'>
+    <name>Volvo application</name>
+    <title>Volvo application</title>
+    <test-cases>
+        <test-case start='1664260555824' status='broken' stop='1664260559827'>
+            <name>To verify the volvo quotes is displayed or not</name>
+            <title>To verify the volvo quotes is displayed or not</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664260555856' status='passed' stop='1664260559594'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='f9f24160-6642-4888-ae0b-81237ecb5f0a-attachment.json' type='application/json' size='73'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664260559600' status='passed' stop='1664260559826'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='01e5438d-6323-44ff-8484-24e66d13cd11-attachment.png' type='image/png' size='79492'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'isDevTools')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'isDevTools')
+                    at findElement (D:\volvo\node_modules\webdriverio\build\utils\index.js:216:15)
+                    at $ (D:\volvo\node_modules\webdriverio\build\commands\browser\$.js:91:43)
+                    at LoginPage.volvoQuotes (D:\volvo\test\pageobjects\/login.page.js:14:16)
+                    at Context.&lt;anonymous> (D:\volvo\test\specs\/volvoTest.js:7:32)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1664260559830' status='broken' stop='1664260561927'>
+            <name>To verify the volvo image is displayed or not</name>
+            <title>To verify the volvo image is displayed or not</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664260559831' status='passed' stop='1664260561724'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='27e9b98f-6fe0-4f3a-bb73-c795bfc19864-attachment.json' type='application/json' size='73'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664260561725' status='passed' stop='1664260561927'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='ace72669-f578-420b-9a43-6da888c95c6b-attachment.png' type='image/png' size='72089'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>_login.default.LogoImage.isDisplayed is not a function</message>
+                <stack-trace>TypeError: _login.default.LogoImage.isDisplayed is not a function
+                    at Context.&lt;anonymous> (D:\volvo\test\specs\/volvoTest.js:13:41)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

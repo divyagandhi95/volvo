@@ -1,0 +1,92 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664260092336' stop='1664260098301'>
+    <name>Volvo application</name>
+    <title>Volvo application</title>
+    <test-cases>
+        <test-case start='1664260092337' status='passed' stop='1664260096227'>
+            <name>To verify the volvo quotes is displayed or not</name>
+            <title>To verify the volvo quotes is displayed or not</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664260092366' status='passed' stop='1664260096097'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='cb2b9289-50dd-4280-a7f6-5ea8c00f4464-attachment.json' type='application/json' size='73'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664260096102' status='passed' stop='1664260096162'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='0ce7bb29-2e13-4ef8-9c15-759b2bef19b1-attachment.json' type='application/json' size='46'/>
+                        <attachment title='Response' source='318a58b2-9d9b-4be0-be3c-2b19a84c74ea-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664260096180' status='passed' stop='1664260096218'>
+                    <name>GET /session/:sessionId/element/28a690b9-bf3b-4fc9-864c-5f3b9efc87c6/text</name>
+                    <title>GET /session/:sessionId/element/28a690b9-bf3b-4fc9-864c-5f3b9efc87c6/text</title>
+                    <attachments>
+                        <attachment title='Response' source='3895bde8-dfad-4b88-b404-c3b72546cf12-attachment.json' type='application/json' size='63'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1664260096228' status='failed' stop='1664260098299'>
+            <name>To verify the volvo image is displayed or not</name>
+            <title>To verify the volvo image is displayed or not</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664260096229' status='passed' stop='1664260097992'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='d4f03465-f565-43bd-9b19-38e534cc1ec0-attachment.json' type='application/json' size='73'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664260098003' status='failed' stop='1664260098299'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1664260098008' status='passed' stop='1664260098298'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='38d80ba9-d792-41da-99d9-18f2707aa196-attachment.json' type='application/json' size='75'/>
+                                <attachment title='Screenshot' source='6600024f-fb95-43c5-bd7c-2cbf1f320540-attachment.png' type='image/png' size='70329'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expect(...).isDisplayed is not a function</message>
+                <stack-trace>TypeError: expect(...).isDisplayed is not a function
+                    at Context.&lt;anonymous> (D:\volvo\test\specs\/volvoTest.js:13:43)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

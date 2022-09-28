@@ -1,0 +1,204 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664283011970' stop='1664283020683'>
+    <name>Volvo application</name>
+    <title>Volvo application</title>
+    <test-cases>
+        <test-case start='1664283011971' status='broken' stop='1664283016151'>
+            <name>To verify the volvo quotes is displayed or not</name>
+            <title>To verify the volvo quotes is displayed or not</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664283011979' status='passed' stop='1664283015930'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='f72e20e4-5b92-4406-b1ad-ecc1245c8823-attachment.json' type='application/json' size='73'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664283015952' status='passed' stop='1664283016149'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='9ce7374c-a8da-4a6a-a78d-31c3c7006a99-attachment.png' type='image/png' size='80069'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'isDevTools')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'isDevTools')
+                    at findElement (D:\volvo\node_modules\webdriverio\build\utils\index.js:216:15)
+                    at $ (D:\volvo\node_modules\webdriverio\build\commands\browser\$.js:91:43)
+                    at LoginPage.volvoQuotes (D:\volvo\test\pageobjects\/login.page.js:14:16)
+                    at Context.&lt;anonymous> (D:\volvo\test\specs\/volvoTest.js:7:32)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1664283016152' status='passed' stop='1664283016421'>
+            <name>To verify the volvo logo is displayed or not</name>
+            <title>To verify the volvo logo is displayed or not</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664283016156' status='passed' stop='1664283016193'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='b8f61ab3-06c7-4c84-881e-984d6c5b1c27-attachment.json' type='application/json' size='75'/>
+                        <attachment title='Response' source='8c89b936-b6df-4361-9801-8eb8af4c5014-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664283016212' status='passed' stop='1664283016420'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='776df1c7-8495-408a-af9f-6790cbbf2eeb-attachment.json' type='application/json' size='8331'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1664283016422' status='passed' stop='1664283018618'>
+            <name>To check logo has link</name>
+            <title>To check logo has link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664283016423' status='passed' stop='1664283018606'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='7cb1a137-da7e-4d62-a604-1ce256e79896-attachment.json' type='application/json' size='73'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664283018608' status='undefined'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='0cb13b05-4cc3-4101-a6dc-075d1ecee39a-attachment.json' type='application/json' size='75'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1664283018619' status='broken' stop='1664283020606'>
+            <name>To get submenu</name>
+            <title>To get submenu</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664283018620' status='passed' stop='1664283018734'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='2d3d1f8b-5793-414a-a12c-578da65e77f8-attachment.json' type='application/json' size='73'/>
+                        <attachment title='Response' source='86a9ac55-e704-48d8-b47e-b78acfa48a87-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664283018751' status='passed' stop='1664283020222'>
+                    <name>GET /session/:sessionId/element/88ae58a7-08c6-4ccf-9487-ca94457076ed/attribute/href</name>
+                    <title>GET /session/:sessionId/element/88ae58a7-08c6-4ccf-9487-ca94457076ed/attribute/href</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664283020224' status='broken' stop='1664283020606'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1664283020323' status='passed' stop='1664283020606'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='57a884e5-a196-469d-b4a2-3442e29d0b5f-attachment.json' type='application/json' size='75'/>
+                                <attachment title='Screenshot' source='4d3ec179-a170-4393-b6b8-4a75f04d6e68-attachment.png' type='image/png' size='69355'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>this.parentMenu.$$ is not a function</message>
+                <stack-trace>TypeError: this.parentMenu.$$ is not a function
+                    at LoginPage.childElements (D:\volvo\test\pageobjects\/login.page.js:29:33)
+                    at LoginPage.getTextForEm (D:\volvo\test\pageobjects\/login.page.js:32:21)
+                    at Context.&lt;anonymous> (D:\volvo\test\specs\/volvoTest.js:30:19)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1664283020607' status='passed' stop='1664283020667'>
+            <name>should fetch menu links and visit each page</name>
+            <title>should fetch menu links and visit each page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664283020609' status='passed' stop='1664283020624'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='621808bc-b7ea-4425-b9ed-63888e3a1ec4-attachment.json' type='application/json' size='70'/>
+                        <attachment title='Response' source='f0438900-86b1-4931-87be-73d0ee82e7ff-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664283020629' status='passed' stop='1664283020659'>
+                    <name>GET /session/:sessionId/element/88ae58a7-08c6-4ccf-9487-ca94457076ed/attribute/href</name>
+                    <title>GET /session/:sessionId/element/88ae58a7-08c6-4ccf-9487-ca94457076ed/attribute/href</title>
+                    <attachments>
+                        <attachment title='Response' source='410c8beb-034c-4fff-b99f-16bf97522588-attachment.json' type='application/json' size='93'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664283020670' status='undefined'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='57e88603-e044-4dd2-a6d5-08249efab3e5-attachment.json' type='application/json' size='75'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

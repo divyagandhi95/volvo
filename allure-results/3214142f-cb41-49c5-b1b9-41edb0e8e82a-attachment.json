@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"button #sitenav-sidenav-toggle\"}\n  (Session info: chrome=105.0.5195.127)",
+  "stacktrace": "Backtrace:\n\tOrdinal0 [0x0047DF13+2219795]\n\tOrdinal0 [0x00412841+1779777]\n\tOrdinal0 [0x0032423D+803389]\n\tOrdinal0 [0x00353025+995365]\n\tOrdinal0 [0x003531EB+995819]\n\tOrdinal0 [0x00380F52+1183570]\n\tOrdinal0 [0x0036E844+1108036]\n\tOrdinal0 [0x0037F192+1175954]\n\tOrdinal0 [0x0036E616+1107478]\n\tOrdinal0 [0x00347F89+950153]\n\tOrdinal0 [0x00348F56+954198]\n\tGetHandleVerifier [0x00772CB2+3040210]\n\tGetHandleVerifier [0x00762BB4+2974420]\n\tGetHandleVerifier [0x00516A0A+565546]\n\tGetHandleVerifier [0x00515680+560544]\n\tOrdinal0 [0x00419A5C+1808988]\n\tOrdinal0 [0x0041E3A8+1827752]\n\tOrdinal0 [0x0041E495+1827989]\n\tOrdinal0 [0x004280A4+1867940]\n\tBaseThreadInitThunk [0x7663FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77D57A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77D57A4E+238]\n"
+}
